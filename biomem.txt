@@ -1,0 +1,28 @@
+
+nằm trong bước quality assessment(see chapter 5, slide 18)
+
+what is a good and bad picture? thế nào là kém chất lượng(low quality, damaged): chỉ có 1 phần vân tay
+ hoặc bị nhiễu nặng làm mất thông tin hoặc bị sửa xoay méo
+(augmentation: xoay, tăng giảm sáng)
+
+tiền xử lí:
+câu hỏi: nếu mục tiêu là phân loại ảnh vân tay chất lượng cao và thấp thì tiền xử lí nhằm (nâng cao chất lượng vân tay làm gì)???
+preprocessing sao cho không mất đi những thông tin liên quan đến chất lượng vân tay đầu vào
+
+
+các đặc trưng phải cung cấp khả năng phân biệt chất lượng vân tay: 1. đầy đủ vân tay(có nghĩa nếu vân tay bị mất thông tin(do
+chất lượng cảm biến, chất lỏng, bụi, nhiệt độ..., hoặc chỉ có 1 phần vân tay)) 2. bị xoay, mờ, cut..
+
+work/develop on:
+đối với những ảnh bị mất thông tin: áp dụng gabor filter(vì tăng chất lượng của ảnh nên sẽ thách thức mô hình tốt hơn)
+đặt ngưỡng chấp nhận
+nhận dạng được vân tay khi người có vết xước, sẹo..
+dataset phải được phân loại đúng
+tốc độ xử lí tính toán phù hợp(thời gian thực...)
+
+application:
+triển khai trên các thiết bị nhận dạng vân tay cần độ tin cậy cao, cần hình ảnh của toàn bộ vân tay như ngân hàng, khởi tạo vân tay(khi làm cccd)...
+data:labeling, augment
+preprocessing
+feature vector: HoG, BoW
+model
