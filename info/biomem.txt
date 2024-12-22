@@ -14,7 +14,7 @@ các đặc trưng phải cung cấp khả năng phân biệt chất lượng v�
 chất lượng cảm biến, chất lỏng, bụi, nhiệt độ..., hoặc chỉ có 1 phần vân tay)) 2. bị xoay, mờ, cut..
 
 work/develop on:
-đối với những ảnh bị mất thông tin: áp dụng gabor filter(vì tăng chất lượng của ảnh nên sẽ thách thức mô hình tốt hơn)
+đối với những ảnh bị mất thông tin: áp dụng gabor filter(vì tăng chất lượng của ảnh nên sẽ thách thức mô hình tốt hơn)(CÓ NGHĨA LÀ phụ thuộc nhiều vào giai đoạn tiền xử lí mà ảnh đầu vào sẽ khác nhau, thứ 2 là có những dataset phù hợp với loại sensor...)
 đặt ngưỡng chấp nhận
 nhận dạng được vân tay khi người có vết xước, sẹo..
 dataset phải được phân loại đúng
